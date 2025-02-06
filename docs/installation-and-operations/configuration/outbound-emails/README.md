@@ -16,7 +16,7 @@ You will need to have SMTP settings ready. Those can either be from a company SM
 Taking SendGrid as an example, you would need to sign up on their website (they
 offer a free plan with up to 12000 emails per month), and once your account is
 provisioned, generate a new API key and copy it somewhere (it looks like
-`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`). You
+. You
 could also simply use your SendGrid username and password, but this is less
 secure.
 
@@ -61,7 +61,8 @@ openproject config:set OPENPROJECT_SMTP__DOMAIN=my.domain.com
 openproject config:set OPENPROJECT_SMTP__AUTHENTICATION=login
 openproject config:set OPENPROJECT_SMTP__ENABLE__STARTTLS__AUTO=true
 openproject config:set OPENPROJECT_SMTP__USER__NAME="apikey"
-openproject config:set OPENPROJECT_SMTP__PASSWORD="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"
+
+
 ```
 
 ## Docker installation
@@ -78,6 +79,6 @@ docker run -d \
   -e OPENPROJECT_SMTP__AUTHENTICATION=login \
   -e OPENPROJECT_SMTP__ENABLE__STARTTLS__AUTO=true \
   -e OPENPROJECT_SMTP__USER__NAME="apikey" \
-  -e OPENPROJECT_SMTP__PASSWORD="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" \
+ 
   ...
 ```
