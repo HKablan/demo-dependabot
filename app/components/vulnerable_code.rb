@@ -79,8 +79,4 @@ def send_credit_card_data(card_number)
   return response.body
 end
 
-# Simulating SQL execution
-def execute_sql(query)
-  puts "Executing SQL: #{query}"  # Simulating SQL execution
-  # Actual database interaction would happen here...
-end
+
