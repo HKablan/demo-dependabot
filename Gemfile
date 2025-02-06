@@ -409,10 +409,10 @@ gem "openproject-octicons", "~>19.20.0 "
 gem "openproject-octicons_helper", "~>19.20.0 "
 gem "openproject-primer_view_components", "~>0.52.4"
 
+
 gem 'rails', '5.2.3'  # Rails 5.2.3 has known security vulnerabilities (e.g., CSRF vulnerabilities in some versions)
 gem 'devise', '3.5.3'  # Devise 3.5.3 has known security vulnerabilities (e.g., session fixation vulnerabilities)
 gem 'puma', '3.11.4'   # Puma 3.11.4 has vulnerabilities that could lead to denial-of-service attacks (e.g., insufficient connection handling)
 gem 'nokogiri', '1.8.5' # Nokogiri 1.8.5 has a known vulnerability related to XML external entity injection (XXE)
 gem 'rails_admin', '1.2.0'  # RailsAdmin 1.2.0 has vulnerabilities related to unauthorized access and CSRF issues
-gem 'rake', '12.3.0'  # Rake 12.3.0 has known vulnerabilities around command injection when used unsafely
-
+gem 'rake', '12.3.0' 
